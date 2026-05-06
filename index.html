@@ -1,0 +1,659 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      ABA - CHAMBER OF COMMERCE, INDUSTRY, MINES AN AGRICULTURE (ACCIMA)
+    </title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="shortcut icon" href="Src/ACCIMA_LOGO-removebg-preview.png" />
+  </head>
+  <body>
+    <!-- TOP BAR -->
+    <div id="home" class="top-bar">
+      <div
+        class="container d-flex justify-content-between align-items-center flex-wrap"
+      >
+        <div>
+          <i class="bi bi-envelope-fill"></i> accima247@gmail.com
+          <span class="mx-3">|</span>
+          <i class="bi bi-telephone-fill"></i> +234 813 824 1363
+        </div>
+
+        <div>
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter-x"></i></a>
+          <a href="#"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="Src/ACCIMA_LOGO-removebg-preview.png" alt="ACCIMA Logo" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span><i class="bi bi-list fs-2"></i></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+
+            <!-- about-dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="aboutDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                About
+              </a>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="about.html">About ACCIMA</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="leadership.html">Leadership</a>
+                </li>
+              </ul>
+            </li>
+            <!--  -->
+
+            <li class="nav-item">
+              <a class="nav-link" href="membership.html">Membership</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Events</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="news.html">News</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+
+            <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+              <a class="nav-link join-btn" href="apply.html">Join Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--  -->
+
+    <!-- HERO SECTION -->
+    <section class="hero d-flex align-items-center">
+      <div class="container text-center text-lg-start">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <h1 class="hero-title">
+              Driving Commerce, Industry & Growth in Aba
+            </h1>
+
+            <p class="hero-text">
+              Supporting businesses, empowering industries, and creating
+              opportunities for sustainable economic development across Aba and
+              beyond.
+            </p>
+
+            <div class="hero-buttons mt-4">
+              <a href="#membership" class="btn btn-primary me-3"
+                >Become a Member</a
+              >
+              <a href="#" class="btn btn-outline-light"
+                >Explore Opportunities</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section class="stats-section text-center">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-md-3 col-6">
+            <div class="stat-box">
+              <i class="bi bi-building"></i>
+              <h2>50+</h2>
+              <p>Years of Excellence</p>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <div class="stat-box">
+              <i class="bi bi-people"></i>
+              <h2>1000+</h2>
+              <p>Active Members</p>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <div class="stat-box">
+              <i class="bi bi-calendar-event"></i>
+              <h2>120+</h2>
+              <p>Events Organized</p>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-6">
+            <div class="stat-box">
+              <i class="bi bi-globe"></i>
+              <h2>10+</h2>
+              <p>Industries Covered</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="row align-items-center justify-content-center g-5">
+          <!-- IMAGE -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="about-img">
+              <img
+                src="Src/ABOUT-IMG.webp"
+                alt="About ACCIMA"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+
+          <!-- TEXT -->
+          <div class="col-lg-6">
+            <h5 class="about-subtitle">About ACCIMA</h5>
+
+            <h2 class="about-title">
+              Empowering Businesses & Driving Economic Growth in Aba
+            </h2>
+
+            <p class="about-text">
+              The Aba Chamber of Commerce, Industry, Mines and Agriculture
+              (ACCIMA) is a leading voice for businesses in Aba, dedicated to
+              promoting trade, supporting industries, and fostering sustainable
+              economic development.
+            </p>
+
+            <p class="about-text">
+              With decades of excellence, ACCIMA continues to connect
+              entrepreneurs, advocate for favorable business policies, and
+              create opportunities that drive growth across multiple sectors.
+            </p>
+
+            <a href="about.html" class="btn btn-primary mt-3">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTORS -->
+    <section id="sectors" class="sectors-section text-center">
+      <div class="container">
+        <!--  -->
+        <div class="section-header mb-5">
+          <h5>Our Focus Areas</h5>
+          <h2>Key Sectors We Support</h2>
+        </div>
+
+        <div class="row g-4">
+          <!-- Commerce -->
+          <div class="col-md-6 col-lg-3">
+            <div class="sector-box h-100">
+              <i class="bi bi-shop"></i>
+              <h4>Commerce</h4>
+              <p>
+                Promoting trade, market access, and business growth across Aba.
+              </p>
+            </div>
+          </div>
+
+          <!-- Industry -->
+          <div class="col-md-6 col-lg-3">
+            <div class="sector-box h-100">
+              <i class="bi bi-gear"></i>
+              <h4>Industry</h4>
+              <p>
+                Supporting manufacturing, production, and industrial innovation.
+              </p>
+            </div>
+          </div>
+
+          <!-- Mines -->
+          <div class="col-md-6 col-lg-3">
+            <div class="sector-box h-100">
+              <i class="bi bi-hammer"></i>
+              <h4>Mines</h4>
+              <p>
+                Encouraging responsible resource exploration and development.
+              </p>
+            </div>
+          </div>
+
+          <!-- Agriculture -->
+          <div class="col-md-6 col-lg-3">
+            <div class="sector-box h-100">
+              <i class="bi bi-tree"></i>
+              <h4>Agriculture</h4>
+              <p>Boosting agribusiness, food production, and sustainability.</p>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+
+    <!-- MEMBERSHIP SECTION -->
+    <section id="membership" class="membership-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- TEXT -->
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h5 class="section-subtitle">Membership</h5>
+            <h2 class="section-title">Why Join ACCIMA?</h2>
+
+            <p class="mb-4">
+              Become part of a powerful network of businesses, gain access to
+              opportunities, and contribute to economic growth in Aba and
+              beyond.
+            </p>
+
+            <ul class="membership-list">
+              <li>
+                <i class="bi bi-check-circle-fill"></i> Business Networking
+                Opportunities
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill"></i> Access to Trade Fairs &
+                Events
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill"></i> Policy Advocacy &
+                Representation
+              </li>
+              <li>
+                <i class="bi bi-check-circle-fill"></i> Business Growth &
+                Support
+              </li>
+            </ul>
+
+            <a href="membership.html" class="btn btn-primary mt-4"
+              >Become a Member</a
+            >
+          </div>
+
+          <!-- IMAGE -->
+          <div class="col-lg-6">
+            <div class="membership-img">
+              <img
+                src="Src/membership-img.avif"
+                alt="Membership"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <!-- EVENTS/TRADE FAIR -->
+    <section id="events" class="events-section">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2>Events & Trade Fairs</h2>
+        </div>
+
+        <div class="row g-4">
+          <!-- EVENT 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="event-card h-100">
+              <div class="event-img">
+                <img
+                  src="Src/event-one-image.jpg"
+                  alt="Event"
+                  class="img-fluid"
+                />
+                <span class="event-date">Aug 20</span>
+              </div>
+              <div class="event-content">
+                <h4>Aba International Trade Fair</h4>
+                <p>
+                  Showcasing local industries, innovation, and business
+                  opportunities.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- EVENT 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="event-card h-100">
+              <div class="event-img">
+                <img
+                  src="Src/event-two-img.jpeg"
+                  alt="Event"
+                  class="img-fluid"
+                />
+                <span class="event-date">Nov 30</span>
+              </div>
+              <div class="event-content">
+                <h4>Business Networking Summit</h4>
+                <p>
+                  Connecting entrepreneurs, investors, and industry leaders.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- EVENT 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="event-card h-100">
+              <div class="event-img">
+                <img
+                  src="Src/event-three-img.jpg"
+                  alt="Event"
+                  class="img-fluid"
+                />
+                <span class="event-date">Apr 04</span>
+              </div>
+              <div class="event-content">
+                <h4>SME Growth Workshop</h4>
+                <p>
+                  Empowering small businesses with tools for growth and
+                  expansion.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BUTTON -->
+        <div class="text-center mt-5">
+          <a href="events.html" class="btn btn-primary">View All Events</a>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+
+    <!-- News -->
+    <section id="news" class="news-section">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h5>Latest Updates</h5>
+          <h2>News & Announcements</h2>
+        </div>
+
+        <div class="row g-4">
+          <!-- NEWS 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="news-card h-100">
+              <div class="news-img">
+                <img src="Src/news-one-img.jpeg" alt="News" class="img-fluid" />
+              </div>
+              <div class="news-content">
+                <span class="news-date">July 12, 2026</span>
+                <h4>Government</h4>
+                <p>GOV. OTTI EXPRESSES READINESS TO PARTNER WITH SURVEYORS.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- NEWS 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="news-card h-100">
+              <div class="news-img">
+                <img src="Src/news-two-img.jpeg" alt="News" class="img-fluid" />
+              </div>
+              <div class="news-content">
+                <span class="news-date">June 28, 2026</span>
+                <h4>Government</h4>
+                <p>GOV. OTTI FLAGS-OFF ABIA ANPA MEDICAL MISSION, SEEKS MORE</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- NEWS 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="news-card h-100">
+              <div class="news-img">
+                <img
+                  src="Src/news-three-img.webp"
+                  alt="News"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="news-content">
+                <span class="news-date">June 10, 2026</span>
+                <h4>Government Sports</h4>
+                <p>
+                  GOV OTTI COMMENDS SUPER EAGLES FOR MAKING NIGERIA PROUD AT
+                  AFCON 2023
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BUTTON -->
+        <div class="text-center mt-5">
+          <a href="news.html" class="btn btn-primary">View All News</a>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+    <!-- JOIN ACCIMA -->
+    <section class="cta-section text-center">
+      <div class="container">
+        <h2>Join ACCIMA and Grow Your Business Today</h2>
+        <p>
+          Become part of a thriving network of entrepreneurs, innovators, and
+          industry leaders shaping the future of Aba.
+        </p>
+
+        <div class="mt-4">
+          <a href="apply.html" class="btn btn-light me-3">How to Join</a>
+          <a href="#contact" class="btn btn-outline-light">Contact Us</a>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h5>Contact Us</h5>
+          <h2>Get in Touch With ACCIMA</h2>
+        </div>
+
+        <div class="row g-4">
+          <!-- CONTACT INFO -->
+          <div class="col-lg-4">
+            <div class="contact-info">
+              <div class="info-box">
+                <i class="bi bi-geo-alt-fill"></i>
+                <h5>Address</h5>
+                <p>
+                  No 3 Umuimo Road Off 142, <br />
+                  Aba Owerri Road , Umuocham, Aba Abia State.
+                </p>
+              </div>
+
+              <div class="info-box">
+                <i class="bi bi-envelope-fill"></i>
+                <h5>Email</h5>
+                <p>accima247@gmail.com</p>
+              </div>
+
+              <div class="info-box">
+                <i class="bi bi-telephone-fill"></i>
+                <h5>Phone</h5>
+                <p>+234 813 824 1363</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FORM -->
+          <div class="col-lg-8">
+            <form class="contact-form" action="contact.php" method="POST">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <input
+                    type="text"
+                    name="name"
+                    class="form-control"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+
+                <div class="col-md-6 mb-3">
+                  <input
+                    type="email"
+                    name="email"
+                    class="form-control"
+                    placeholder="Your Email"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <input
+                  type="text"
+                  name="subject"
+                  class="form-control"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <textarea
+                  name="message"
+                  class="form-control"
+                  rows="5"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- MAP -->
+        <div class="map mt-5">
+          <iframe
+            src="https://www.google.com/maps?q=Aba,Nigeria&output=embed"
+            width="100%"
+            height="350"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-4">
+          <!-- ABOUT -->
+          <div class="col-lg-4">
+            <h4>ACCIMA</h4>
+            <p>
+              The Aba Chamber of Commerce, Industry, Mines and Agriculture is
+              committed to promoting business growth and economic development.
+            </p>
+          </div>
+
+          <!-- LINKS -->
+          <div class="col-lg-4">
+            <h5>Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#membership_id">Membership</a></li>
+              <li><a href="#events">Events</a></li>
+            </ul>
+          </div>
+
+          <!-- SOCIAL -->
+          <div class="col-lg-4">
+            <h5>Follow Us</h5>
+            <div class="social-icons">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="text-center">
+          <p>© 2026 ACCIMA. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
