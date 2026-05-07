@@ -645,7 +645,13 @@ body {
   body {
     background: #f8f9fa;
     max-width: 100%;
-    overflow-x: clip !important;
+    overflow-x: clip;
+  }
+
+  @supports not (overflow-x: clip) {
+    body {
+      overflow-x: hidden;
+    }
   }
 
   .top-socials {
