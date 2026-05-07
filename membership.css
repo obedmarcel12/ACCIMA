@@ -100,64 +100,149 @@ body {
   display: block;
 }
 
-/* HERO */
 .member-hero {
-  padding: 100px 0;
+  padding: 110px 0;
   background:
-    linear-gradient(rgba(13, 27, 82, 0.8), rgba(13, 27, 82, 0.8)),
-    url("Src/CTA-Img.jpeg") center/cover no-repeat;
+    linear-gradient(rgba(13, 27, 82, 0.78), rgba(13, 27, 82, 0.72)),
+    url("Src/contact-img.avif") center/cover no-repeat;
   color: #fff;
   text-align: center;
 }
 
-/* SECTION */
-.section {
+.member-hero-content {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.member-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.member-hero p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.member-hero-btn,
+.member-cta .btn {
+  background: #d4af37;
+  color: #0d1b52;
+  padding: 13px 28px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.membership-intro,
+.membership-benefits,
+.who-can-join,
+.membership-network,
+.membership-process {
   padding: 80px 0;
+}
+
+.membership-benefits,
+.membership-network {
+  background: #fff;
+}
+
+.membership-intro,
+.who-can-join,
+.membership-process {
+  background: #f8f9fa;
+}
+
+.section-subtitle {
+  color: #d4af37;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .section-title {
-  font-weight: 700;
   color: #0d1b52;
-  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
 }
 
-/* BENEFITS */
-.benefit-box {
+.benefit-box,
+.network-box,
+.process-box {
   background: #fff;
-  padding: 25px;
-  border-radius: 10px;
-  transition: 0.3s;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  padding: 28px 22px;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
 }
 
-.benefit-box:hover {
-  transform: translateY(-5px);
+.benefit-box i {
+  font-size: 2rem;
+  color: #d4af37;
+  margin-bottom: 15px;
 }
 
-/* CATEGORY */
-.category-box {
+.benefit-box h5,
+.network-box h5,
+.process-box h5 {
+  color: #0d1b52;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.benefit-box p,
+.network-box p,
+.process-box p,
+.membership-intro p,
+.who-can-join p {
+  color: #555;
+  line-height: 1.7;
+}
+
+.join-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.join-list span {
   background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  padding: 14px 16px;
+  border-radius: 6px;
+  color: #333;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
 }
 
-.category-box:hover {
-  transform: translateY(-5px);
+.join-list i {
+  color: #d4af37;
+  margin-right: 8px;
 }
 
-/* CTA */
+.process-box span {
+  display: inline-block;
+  color: #d4af37;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
 .member-cta {
+  padding: 80px 0;
   background: #0d1b52;
   color: #fff;
   text-align: center;
-  padding: 80px 0;
 }
 
-.member-cta .btn {
-  background: #d4af37;
-  border: none;
-  padding: 12px 30px;
+.member-cta h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.member-cta p {
+  max-width: 680px;
+  margin: 15px auto 0;
+  line-height: 1.7;
 }
 
 /* FOOTER */
@@ -243,5 +328,94 @@ body {
   .navbar-brand img {
     max-width: 130px;
     height: auto;
+  }
+
+  .member-hero {
+    padding: 70px 0;
+  }
+
+  .member-hero .container,
+  .membership-intro .container,
+  .membership-benefits .container,
+  .who-can-join .container,
+  .membership-network .container,
+  .membership-process .container,
+  .member-cta .container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .member-hero h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .member-hero p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .membership-intro,
+  .membership-benefits,
+  .who-can-join,
+  .membership-network,
+  .membership-process,
+  .member-cta {
+    padding: 55px 0;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 1.45rem;
+    line-height: 1.25;
+  }
+
+  .section-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .benefit-box,
+  .network-box,
+  .process-box {
+    padding: 24px 18px;
+  }
+
+  .join-list {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .join-list span {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .member-cta h2 {
+    font-size: 1.55rem;
+  }
+
+  .member-cta p {
+    font-size: 0.92rem;
+  }
+
+  .member-hero-btn,
+  .member-cta .btn {
+    width: 100%;
+    max-width: 280px;
+    padding: 12px 18px;
+  }
+
+  .member-hero h1,
+  .member-hero p,
+  .section-title,
+  .membership-intro p,
+  .who-can-join p,
+  .benefit-box p,
+  .network-box p,
+  .process-box p,
+  .member-cta p {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 }

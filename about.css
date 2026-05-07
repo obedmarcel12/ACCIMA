@@ -98,49 +98,157 @@ body {
 .navbar .dropdown:hover .dropdown-menu {
   display: block;
 }
-
-/* HERO */
+/* ABOUT HERO */
 .about-hero {
   padding: 100px 0;
   background:
-    linear-gradient(rgba(13, 27, 82, 0.5), rgba(13, 27, 82, 0.6)),
-    url("Src/membership-img.avif") center/cover no-repeat;
+    linear-gradient(rgba(13, 27, 82, 0.78), rgba(13, 27, 82, 0.72)),
+    url("Src/ABOUT-IMG.webp") center/cover no-repeat;
   color: #fff;
 }
 
-/* ABOUT FULL */
-.about-full {
-  padding: 80px 0;
+.about-hero .container {
+  max-width: 850px;
+  padding-left: 18px;
+  padding-right: 18px;
 }
 
-/* MISSION */
+.about-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+.about-hero p {
+  font-size: 1.08rem;
+  line-height: 1.7;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ABOUT PAGE SECTIONS */
+.about-full,
+.history-section,
+.impact-section,
+.aba-economy,
+.mission-section,
+.about-cta {
+  padding: 70px 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+.about-full,
+.history-section,
+.aba-economy,
 .mission-section {
-  padding: 80px 0;
   background: #f8f9fa;
 }
 
-.mission-box {
+.impact-section {
   background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
-/* CTA */
+.about-full img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.about-subtitle {
+  color: #d4af37;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.section-title,
+.about-full h2 {
+  color: #0d1b52;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.history-box,
+.impact-box,
+.economy-card,
+.mission-box {
+  background: #fff;
+  padding: 28px 24px;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.history-box p,
+.aba-economy p,
+.about-full p,
+.impact-box p,
+.economy-card p,
+.mission-box p {
+  color: #555;
+  line-height: 1.7;
+}
+
+.impact-box i,
+.mission-box i {
+  font-size: 2rem;
+  color: #d4af37;
+  margin-bottom: 15px;
+}
+
+.impact-box h5,
+.economy-card h5,
+.mission-box h3 {
+  color: #0d1b52;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.economy-card {
+  margin-bottom: 15px;
+}
+
+.economy-card:last-child {
+  margin-bottom: 0;
+}
+
+.economy-card span {
+  display: block;
+  color: #d4af37;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
 .about-cta {
-  padding: 80px 0;
   background: #0d1b52;
   color: #fff;
 }
 
-.about-cta .btn {
-  background: #d4af37;
-  border: none;
-  padding: 12px 30px;
+.about-cta h2 {
+  font-size: 2rem;
+  font-weight: 700;
 }
 
-.about-cta .btn:hover {
-  background: #b8962e;
+.about-cta p {
+  max-width: 680px;
+  margin: 15px auto 24px;
+  line-height: 1.7;
+}
+
+.about-cta .btn {
+  background: #d4af37;
+  color: #0d1b52;
+  padding: 13px 28px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 /* FOOTER */
@@ -227,44 +335,49 @@ body {
     max-width: 130px;
     height: auto;
   }
+  .top-socials {
+    display: none;
+  }
 
-  @media (max-width: 575.98px) {
-    .about-full {
-      padding: 50px 0;
-      text-align: center;
-    }
+  .top-bar .container {
+    justify-content: center !important;
+    text-align: center;
+  }
 
-    .about-full .container {
-      padding-left: 18px;
-      padding-right: 18px;
-    }
+  .top-contact {
+    width: 100%;
+    font-size: 0.78rem;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.6rem;
+  }
 
-    .about-full .row {
-      --bs-gutter-x: 0;
-    }
+  .top-contact .divider {
+    display: none;
+  }
 
-    .about-full .col-lg-6 {
-      max-width: 100%;
-    }
+  .top-contact span {
+    white-space: normal;
+  }
 
-    .about-full img {
-      border-radius: 8px;
-      margin-bottom: 10px;
-    }
+  .navbar-brand img {
+    max-width: 130px;
+    height: auto;
+  }
 
-    .about-full h2 {
-      font-size: 1.45rem;
-      line-height: 1.25;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  .about-hero {
+    padding: 70px 0;
+  }
 
-    .about-full p {
-      font-size: 0.92rem;
-      line-height: 1.65;
-      max-width: 100%;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  .about-full,
+  .history-section,
+  .impact-section,
+  .aba-economy,
+  .mission-section,
+  .about-cta {
+    padding: 55px 0;
   }
 }
