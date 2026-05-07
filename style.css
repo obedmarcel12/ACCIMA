@@ -11,9 +11,6 @@ html {
 
 body {
   background: #f8f9fa;
-  margin: 0;
-  overflow-x: hidden !important; /* stop sideways scroll */
-  overflow-y: auto !important; /* keep normal vertical scroll */
 }
 
 /* Top Bar */
@@ -707,5 +704,41 @@ body {
     width: 100%;
     max-width: 280px;
     margin-right: 0 !important;
+  }
+
+  .about-section {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .about-section .row {
+    --bs-gutter-x: 0;
+  }
+
+  .about-title {
+    font-size: 1.45rem;
+    line-height: 1.25;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .about-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .about-text {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-img img {
+    max-width: 100%;
+    height: auto;
   }
 }
