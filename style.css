@@ -741,4 +741,61 @@ body {
     max-width: 100%;
     height: auto;
   }
+
+  .membership-section {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .membership-section .row {
+    --bs-gutter-x: 0;
+  }
+
+  .section-subtitle {
+    font-size: 0.85rem;
+  }
+
+  .section-title {
+    font-size: 1.45rem;
+    line-height: 1.25;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .membership-section p {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .membership-list {
+    text-align: left;
+    max-width: 320px;
+    margin: 0 auto;
+  }
+
+  .membership-list li {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .membership-list i {
+    margin-right: 0;
+    flex-shrink: 0;
+    margin-top: 3px;
+  }
+
+  .membership-section .btn-primary {
+    padding: 11px 20px;
+    font-size: 0.9rem;
+  }
+
+  .membership-img img {
+    max-width: 100%;
+    height: auto;
+  }
 }
