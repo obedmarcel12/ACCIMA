@@ -35,8 +35,11 @@ body {
 /* Navbar */
 .navbar {
   background: #ffffff;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1050;
 }
 
 /* LOGO IMAGE */
@@ -120,9 +123,6 @@ body {
   font-size: 48px;
   font-weight: 700;
   line-height: 1.2;
-}
-
-.hero-title {
   animation: fadeUp 2s ease forwards;
 }
 
@@ -161,31 +161,6 @@ body {
   border-radius: 5px;
 }
 
-/* Prevent horizontal overflow globally */
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-/* Hero should breathe on all screen sizes */
-.hero {
-  min-height: 80vh;
-  padding: 5rem 0;
-}
-
-.hero-title {
-  font-size: clamp(2rem, 6vw, 4.5rem);
-  line-height: 1.08;
-  max-width: 760px;
-}
-
-.hero-text {
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
-  line-height: 1.6;
-  max-width: 620px;
-}
-
 /* Buttons should wrap nicely on phones */
 .hero-buttons {
   display: flex;
@@ -195,86 +170,6 @@ body {
 
 .hero-buttons .btn {
   white-space: normal;
-}
-
-@media (max-width: 767.98px) {
-  .hero {
-    text-align: center;
-  }
-
-  .hero-title,
-  .hero-text {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .hero-buttons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-  }
-
-  .hero-buttons .btn {
-    margin-right: 0 !important;
-  }
-}
-
-/* Phone view */
-@media (max-width: 575.98px) {
-  .top-bar .container {
-    justify-content: center !important;
-    gap: 0.5rem;
-    text-align: center;
-  }
-
-  .top-bar span.mx-3 {
-    display: none;
-  }
-
-  .navbar-brand img {
-    max-width: 130px;
-    height: auto;
-  }
-
-  .hero {
-    min-height: auto;
-    /* padding: 4rem 0; */
-    text-align: center;
-    height: 70vh;
-    background:
-      linear-gradient(rgba(13, 27, 82, 0.65), rgba(13, 27, 82, 0.4)),
-      url("Src/hero-section-img.jpg") center/cover no-repeat;
-    color: #fff;
-    padding: 100px 0;
-    display: flex;
-    align-items: center;
-  }
-
-  .hero .container {
-    padding-left: 0 !important;
-  }
-
-  .hero-title {
-    font-size: 1.3rem;
-    line-height: 1.15;
-  }
-
-  .hero-text {
-    font-size: 0.9rem;
-    margin-inline: auto;
-  }
-
-  .hero-buttons {
-    justify-content: center;
-  }
-
-  .hero-buttons .btn {
-    width: 100%;
-    max-width: 280px;
-    margin-right: 0 !important;
-  }
 }
 
 /* STATS SECTION */
@@ -712,4 +607,113 @@ body {
 
 .footer hr {
   border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* RESPONSIVENESS */
+
+@media (max-width: 767.98px) {
+  .hero {
+    text-align: center;
+  }
+
+  .hero-title,
+  .hero-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .hero-buttons .btn {
+    margin-right: 0 !important;
+  }
+}
+/* 
+/* Phone view */
+@media (max-width: 575.98px) {
+  html {
+    scroll-behavior: smooth;
+    max-width: 100%;
+  }
+
+  body {
+    background: #f8f9fa;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  .top-socials {
+    display: none;
+  }
+
+  .top-bar .container {
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  .top-contact {
+    width: 100%;
+    font-size: 0.78rem;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.6rem;
+  }
+
+  .top-contact .divider {
+    display: none;
+  }
+
+  .top-contact span {
+    white-space: nowrap;
+  }
+
+  .navbar-brand img {
+    max-width: 130px;
+    height: auto;
+  }
+
+  .hero {
+    min-height: auto;
+    text-align: center;
+    height: 70vh;
+    background:
+      linear-gradient(rgba(13, 27, 82, 0.65), rgba(13, 27, 82, 0.4)),
+      url("Src/hero-section-img.jpg") center/cover no-repeat;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero .container {
+    padding-left: 0 !important;
+  }
+
+  .hero-title {
+    font-size: 1.3rem;
+    line-height: 1.15;
+  }
+
+  .hero-text {
+    font-size: 0.9rem;
+    margin-inline: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 280px;
+    margin-right: 0 !important;
+  }
 }
