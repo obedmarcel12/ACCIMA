@@ -11,6 +11,9 @@ html {
 
 body {
   background: #f8f9fa;
+  margin: 0;
+  overflow-x: hidden !important; /* stop sideways scroll */
+  overflow-y: auto !important; /* keep normal vertical scroll */
 }
 
 /* Top Bar */
@@ -637,12 +640,6 @@ body {
 /* 
 /* Phone view */
 @media (max-width: 575.98px) {
-  body {
-    margin: 0;
-    overflow-x: hidden; /* stop sideways scroll */
-    overflow-y: auto; /* keep normal vertical scroll */
-  }
-
   .top-socials {
     display: none;
   }
