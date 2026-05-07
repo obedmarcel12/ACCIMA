@@ -645,7 +645,7 @@ body {
   body {
     background: #f8f9fa;
     max-width: 100%;
-    overflow-x: clip;
+    overflow-x: clip !important;
   }
 
   .top-socials {
