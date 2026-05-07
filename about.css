@@ -192,3 +192,79 @@ body {
 .footer hr {
   border-color: rgba(255, 255, 255, 0.2);
 }
+
+/* Phone view */
+@media (max-width: 575.98px) {
+  .top-socials {
+    display: none;
+  }
+
+  .top-bar .container {
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  .top-contact {
+    width: 100%;
+    font-size: 0.78rem;
+    line-height: 1.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.6rem;
+  }
+
+  .top-contact .divider {
+    display: none;
+  }
+
+  .top-contact span {
+    white-space: nowrap;
+  }
+
+  .navbar-brand img {
+    max-width: 130px;
+    height: auto;
+  }
+
+  @media (max-width: 575.98px) {
+    .about-full {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .about-full .container {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+
+    .about-full .row {
+      --bs-gutter-x: 0;
+    }
+
+    .about-full .col-lg-6 {
+      max-width: 100%;
+    }
+
+    .about-full img {
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .about-full h2 {
+      font-size: 1.45rem;
+      line-height: 1.25;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .about-full p {
+      font-size: 0.92rem;
+      line-height: 1.65;
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
