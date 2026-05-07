@@ -696,6 +696,14 @@ body {
     margin-inline: auto;
   }
 
+  .hero-text {
+    max-width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
   .hero-buttons {
     justify-content: center;
   }
