@@ -334,6 +334,71 @@ body {
     padding: 70px 0;
   }
 
+  .member-hero,
+  .membership-intro,
+  .membership-benefits,
+  .who-can-join,
+  .membership-network,
+  .membership-process,
+  .member-cta {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .member-hero .container,
+  .membership-intro .container,
+  .membership-benefits .container,
+  .who-can-join .container,
+  .membership-network .container,
+  .membership-process .container,
+  .member-cta .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .membership-intro .row,
+  .membership-benefits .row,
+  .who-can-join .row,
+  .membership-network .row,
+  .membership-process .row {
+    margin-left: 0;
+    margin-right: 0;
+    --bs-gutter-x: 0;
+  }
+
+  .membership-intro [class*="col-"],
+  .membership-benefits [class*="col-"],
+  .who-can-join [class*="col-"],
+  .membership-network [class*="col-"],
+  .membership-process [class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .benefit-box,
+  .network-box,
+  .process-box,
+  .join-list span {
+    max-width: 100%;
+  }
+
+  .member-hero h1,
+  .member-hero p,
+  .section-title,
+  .section-subtitle,
+  .membership-intro p,
+  .who-can-join p,
+  .benefit-box p,
+  .network-box p,
+  .process-box p,
+  .member-cta p {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
   .member-hero .container,
   .membership-intro .container,
   .membership-benefits .container,
@@ -371,7 +436,7 @@ body {
   }
 
   .section-subtitle {
-    font-size: 0.85rem;
+    font-size: 1.2rem;
   }
 
   .benefit-box,
