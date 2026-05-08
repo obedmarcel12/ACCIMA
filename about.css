@@ -359,25 +359,225 @@ p:last-child {
     display: none;
   }
 
-  .top-contact span {
-    white-space: normal;
-  }
-
   .navbar-brand img {
     max-width: 130px;
     height: auto;
   }
 
-  .about-hero {
-    padding: 70px 0;
-  }
-
+  .about-hero,
   .about-full,
   .history-section,
   .impact-section,
   .aba-economy,
   .mission-section,
   .about-cta {
-    padding: 55px 0;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .about-hero .container,
+  .about-full .container,
+  .history-section .container,
+  .impact-section .container,
+  .aba-economy .container,
+  .mission-section .container,
+  .about-cta .container {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .about-full .row,
+  .history-section .row,
+  .impact-section .row,
+  .aba-economy .row,
+  .mission-section .row {
+    margin-left: 0;
+    margin-right: 0;
+    --bs-gutter-x: 0;
+  }
+
+  .about-full [class*="col-"],
+  .history-section [class*="col-"],
+  .impact-section [class*="col-"],
+  .aba-economy [class*="col-"],
+  .mission-section [class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .history-box,
+  .impact-box,
+  .economy-card,
+  .mission-box {
+    max-width: 100%;
+  }
+
+  .about-full img {
+    max-width: 100%;
+  }
+
+  .about-hero {
+    padding: 60px 0;
+  }
+
+  .about-hero h1 {
+    font-size: 1.67rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+  }
+
+  .about-hero p {
+    font-size: 1rem;
+    line-height: 1.55;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-full {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .about-full .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .about-full h2 {
+    font-size: 1.35rem;
+    line-height: 1.25;
+    margin-bottom: 14px;
+  }
+
+  .about-full .about-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  .about-full p {
+    font-size: 0.84rem;
+    line-height: 1.6;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .about-full p:last-child {
+    margin-bottom: 0;
+  }
+
+  .history-section {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .history-section .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .history-section .row {
+    --bs-gutter-x: 0;
+  }
+
+  .history-section .about-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  .history-section .section-title {
+    font-size: 1.35rem;
+    line-height: 1.25;
+    margin-bottom: 14px;
+  }
+
+  .history-section p {
+    font-size: 0.86rem;
+    line-height: 1.6;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .history-box {
+    padding: 22px 18px;
+    margin-top: 8px;
+  }
+
+  .history-box p {
+    margin-bottom: 12px;
+  }
+
+  .history-box p:last-child {
+    margin-bottom: 0;
+  }
+
+  .impact-section .text-center.mb-5 {
+    margin-bottom: 28px !important;
+  }
+
+  .impact-section .about-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  .impact-section .section-title {
+    font-size: 1.35rem;
+    line-height: 1.25;
+    max-width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .aba-economy {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  .aba-economy .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .aba-economy .row {
+    --bs-gutter-x: 0;
+  }
+
+  .aba-economy .about-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  .aba-economy .section-title {
+    font-size: 1.35rem;
+    line-height: 1.25;
+    max-width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 14px;
+  }
+
+  .aba-economy p {
+    font-size: 0.86rem;
+    line-height: 1.6;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  .aba-economy p:last-child {
+    margin-bottom: 0;
   }
 }
